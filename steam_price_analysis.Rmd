@@ -1,7 +1,7 @@
 ---
 title: "Historical Steam Game Price Distribution Across Genres"
-author: "Group Project - STAT 184"
-date: "`r Sys.Date()`"
+author: "Sam and Noah - STAT 184"
+date: "12/6/2025"
 output:
   html_document:
     theme: cosmo
@@ -10,14 +10,13 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
-# Introduction
+# What we're exploring
 
 We're looking at how Steam game prices have changed over time across different genres. Our data covers 2015-2024 to see if certain genres are more expensive and how prices trend over the years.
 
-# Loading Libraries
 
 ```{r}
 library(tidyverse)
@@ -25,7 +24,6 @@ library(lubridate)
 library(scales)
 ```
 
-# Data Collection and Tidying
 
 ## Load Steam App Data
 
@@ -347,7 +345,7 @@ ggplot(scatter_data, aes(x = year, y = price, color = genre)) +
 
 The scatter plot shows each genre's price trend over time. You can see the downward slopes for all genres, with Sports and RPG games staying higher up while Indie and Puzzle stay lower.
 
-# Conclusions
+# Insights
 
 Essentially genre matters a lot for how much games cost. Sports, RPG, and Action/FPS games are the most expensive (around $25-45) and Indie and Puzzle games are way cheaper at like $5-15. This makes sense because AAA games have bigger budgets.
 
