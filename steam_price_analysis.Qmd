@@ -422,6 +422,17 @@ ggplot(yearly_prices, aes(x = release_year, y = avg_price, color = primary_genre
 
 Interesting trends: RPG games have gotten more expensive over time, while Indie games have remained consistently cheap. Action games show some price volatility.
 
+# FAIR and CARE Principles
+
+This project follows the FAIR and CARE principles to ensure the data analysis is transparent, reproducible, and ethical.
+
+**FAIR Principles** :
+
+The data used in this project is organized in a clear folder structure with descriptive file names, making it easy to locate and understand. All datasets are stored in open CSV formats that can be accessed using free and widely available software. A shared identifier (app_id) is used across datasets, allowing them to be joined consistently. All data cleaning and analysis steps are documented in this report so the results can be reproduced.
+
+**CARE Principles** :
+This analysis is conducted for educational purposes and focuses on overall trends in the Steam marketplace rather than individual developers or players. All datasets used are publicly available, and no private or personally identifiable information is included. The data is handled responsibly through the use of aggregated summaries and visualizations. Potential biases and limitations in the data are acknowledged to avoid misleading or unfair conclusions.
+
 # Key Insights
 
 Based on our analysis of real Steam data:
